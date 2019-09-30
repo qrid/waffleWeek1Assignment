@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>네이버 스포츠</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            html, body {
+                height : 100%;
+                width : 100%;
+            }
+
+            h1{
+                text-align: center;
+            }
+            .banner{
+                display: grid;
+                height: 70px;
+                grid-template-columns: 70px 1fr 100px;
+                padding-top: 10px;
+            }
+            .main_nav{
+                display: grid;
+                width : 900px;
+                grid-template-columns : repeat(7, 1fr) 150px;
+                text-align: center;
+                margin-left : auto;
+                margin-right : auto;
+                padding-bottom: 10px;
+                font-size: 20px;
+                
+            }
+            .sub_nav {
+                display:grid;
+                width : 100%;
+                background-color : #2565d0;
+            }
+            .sub_nav_inner{
+                display: grid;
+                grid-template-columns : 1fr 1fr 1fr 1fr 1fr;
+                color : #a2c4ff;
+                height: 40px;
+                width : 800px;
+                text-align: center;
+                line-height: 40px;
+                margin-left : auto;
+                margin-right : auto;
+
+            }
+            .hl {
+                display: grid;
+                justify-content: center;
+            }
+            .hldetail {
+                display: grid;
+                background-color : white;
+                height: 250px;
+                grid-template-columns: 410px 110px 210px;
+            }
+            .hldetail > div{
+                display:grid;
+                padding: 5px;
+                border: 1px solid #ebebeb;
+            }
+            .hltable {
+                display: grid;
+                grid-template-rows : 1fr 1fr 1fr; 
+            }
+            .hltable > div {
+                display: block;
+                padding-top: 7%;
+            }
+
+            .broadcast{
+                display: grid;
+                width : 730px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top : 10px;
+                background-color: white;
+            }
+            .bcnow{
+                display:grid;
+                width : 730px;
+                margin-left:auto;
+                margin-right:auto;
+                padding-top: 5px;
+                grid-template-columns: 1fr 50px 1fr;
+                text-align: center;
+                border-top: 1px solid #ebebeb;
+            }
+            .hotclip{
+                display: grid;
+                width : 730px;
+                background-color:white;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top : 10px;
+                grid-template-columns : 1fr 1fr 1fr 1fr;
+                grid-template-rows : 20px 100px 40px;
+            }
+            .hctitle{
+                grid-column:1/5;
+                border-bottom : 1px solid #ebebeb;
+                padding : 3px;
+            }
+            .hcmovie{
+                margin : 5px;
+                border : 2px solid red;
+            }
+            .hcmore{
+                grid-column:1/5;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <div >메뉴</div>
+            <h1> 네이버 스포츠 로고</h1>
+            <div>SCORE</div>
+        </div>
+        <div class="main_nav">
+            <div>홈</div>
+            <div>야구</div>
+            <div>해외야구</div>
+            <div>농구</div>
+            <div>배구</div>
+            <div>골프</div>
+            <div>일반</div>
+            <div>e스포츠 & 게임</div>
+        </div>
+        <div class="sub_nav">
+            <div class="sub_nav_inner">
+                <div>뉴스</div>
+                <div>영상</div>
+                <div>포토</div>
+                <div>일정</div>
+                <div>순위</div>
+            </div>
+        </div>
+
+        <!-- 여기 헤드라인 뉴스-->
+        <div style="background-color: #ebebeb; height: 100%">
+            <div class="hl">
+                <div class="hlnews", style="padding-top:2px">헤드라인 뉴스 beta</div>
+                <div class="hldetail">
+                    <div style="background-color: aqua">
+                        헤드라인 뉴스 사진!
+                    </div>
+                    <div>
+                        "죄송합니다" 입지 넓혀가는 이강인, 인터뷰 정중히 거절...
+                    </div>
+                    <div class="hltable", style="list-style-type: none; align-content: space-around;">
+                        <div style="border-bottom:1px solid #ebebeb"> 풀타임 뛴 황의조, 필드플레이어 최저 평점</div>
+                        <div style="border:1px"> 손흥민, 황희찬 '쨍쩅', 기성용 '흐림' ... 유럽파 초반 기상도</div>
+                        <div style="border-top:1px solid #ebebeb"> '멀티골, 도움, 데뷔'... 지난 라운드 해외파 총정리 </div> 
+                    </div>
+                </div>
+            </div>
+            <!-- 여기 경기중계-->
+            <div class="broadcast">
+                <div style="padding: 3px">
+                    경기 중계 <span style="font-size:10px"> 2019.09.22~23 </span>
+                </div>
+                <div class="bcnow">
+                    볼프스부르크 <span style="font-size:10px"> <div style="border-bottom: 1px solid #ebebeb"> 예정</div><div> 03:30 </div> </span> 호펜하임
+                </div>
+            </div>
+            <!-- 여기 최신 인기 영상-->
+            <div class="hotclip">
+                <div class="hctitle" ,style="font-size:20px"> 최신 인기 영상 </div>
+                <div class="hcmovie"> 하이라이트 </div>
+                <div class="hcmovie"> 골 영상 </div>
+                <div class="hcmovie"> 경기스케치 </div>
+                <div class="hcmovie"> 슈퍼세이브 </div> 
+                <div class="hcmore", style="padding: 10px; border-top: 1px solid #ebebeb"> 더보기 V</div>
+            </div>
+            <!-- 여기 광고-->
+            <!-- 여기 날씨-->
+            <!-- 여기 추천-->
+            <!-- 여기 기사-->
+        </div>
+    </body>
+</html>
